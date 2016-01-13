@@ -8,6 +8,10 @@ This same code has been submitted as a pull request
 is accepted, this code will be incorporated into Spark proper,
 but in the meantime, users can access the code via this little package.
 
+The calibration code is contained in the class `MyBinaryClassificationMetrics`
+in the package `org.apache.spark.mllib.evaluation`, to distinguish it from
+the existing Spark MLlib class `BinaryClassificationMetrics` in the same package.
+
 ### Building spark-calibration
 
 spark-calibration uses SBT.
