@@ -25,7 +25,10 @@ spark-calibration uses SBT.
 Execute `sbt assembly` to produce a jar, which can be used by a stand-
 alone program, or by `spark-shell` or other interactive environment.
 
-An example using `spark-shell`:
+Here is an example using `spark-shell`. By construction, `scoresAndLabels`
+contains scores which are well-calibrated: when the number of scores in each
+bin is large, the proportion of positive examples in each bin is approximately
+equal to the average score.
 
 ```
 $ spark-shell -classpath ./target/scala-2.10/spark-calibration_2.10.6-0.0.1-SNAPSHOT-ASSEMBLY.jar
